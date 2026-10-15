@@ -1,7 +1,7 @@
 {
-  "name": "Spam Bot Check",
-  "short_name": "Spam Check",
-  "description": "Check emails, social posts, and text messages for spam, scams, and bots.",
+  "name": "Real or Fake?",
+  "short_name": "Real or Fake",
+  "description": "Check emails, posts, texts, websites, ads, mail, and news for scams and fakes.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

@@ -1,5 +1,5 @@
-// Spam Bot Check service worker: keeps the app working offline after the first visit.
-const CACHE = "spam-bot-check-v6";
+// Real or Fake? service worker: keeps the app working offline after the first visit.
+const CACHE = "real-or-fake-v7";
 const CORE = ["./", "index.html", "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", e => {
