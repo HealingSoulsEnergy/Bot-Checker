@@ -1,6 +1,6 @@
 # Real or Fake?
 
-Paste an email, a social media post or comment, a text message, a website address and its page text, a TV or online ad, a letter in the mail, or a news story or video, or add a screenshot or photo, and Real or Fake? scores how likely it is to be spam, a scam, or a bot from 0 to 100. It lists each warning sign it found and highlights the exact words in the message.
+Paste an email, a social media post or comment, a text message, a website address and its page text, a TV or online ad, a letter in the mail, or a news story or video, or a voicemail or phone call, or add a screenshot or photo, and Real or Fake? scores how likely it is to be spam, a scam, or a bot from 0 to 100. It lists each warning sign it found and highlights the exact words in the message.
 
 Everything runs in the browser. Pasted text is never sent anywhere. Screenshots are read on the device with Tesseract OCR (the reader downloads once from a public CDN the first time it is used, then is cached).
 
@@ -14,6 +14,8 @@ For mortgage and credit offers, in any tab, it flags letters written as if they'
 
 For news stories and videos it flags fake celebrity and Shark Tank endorsements, claims that the story is being hidden or censored, share pressure, shock headlines, missing sources, and copycat news addresses like abcnews.com.co. It does not judge whether a claim is true or take sides on any viewpoint; instead it links to Google News, Google's fact check search, and reverse image search so you can see whether real outlets report the same thing.
 
+For voicemails and calls it flags the grandparent scam (a relative, or a cloned voice, in jail or hurt and needing money), government and police threats, press 1 and stay on the line robocalls, fake Amazon or Apple order calls, and utility shutoff threats, and it reminds people that a familiar voice proves nothing now. Voice recordings, including a clip of someone giving a speech, can be dropped in and are written out on the device with the Whisper speech model (about 40 MB, downloaded once). It does not and cannot tell whether a voice was AI cloned. For speeches and talks, by AI or a real person, it also flags vague "experts say" claims with no names, absolute certainty, fear and outrage appeals, and asks for money, without judging any viewpoint.
+
 It also has a writing style section that shows the clues pointing toward AI writing and the clues pointing toward a person, side by side. It is a lean, never a verdict, and it never changes the spam score, because AI writing cannot be proven from text alone.
 
 It is installable as an app on phones and computers and works offline after the first visit.
@@ -26,7 +28,7 @@ It is installable as an app on phones and computers and works offline after the 
 
 Upload all the files to the root of a repository, then in the repository go to Settings, then Pages, choose Deploy from a branch, pick `main` and `/ (root)`, and save. The site appears at `https://<your-username>.github.io/<repository-name>/` within a minute or two.
 
-When you change `index.html`, also change `CACHE` in `sw.js` (for example to `real-or-fake-v8`) so installed copies pick up the new version.
+When you change `index.html`, also change `CACHE` in `sw.js` (for example to `real-or-fake-v9`) so installed copies pick up the new version.
 
 ## Limits
 
