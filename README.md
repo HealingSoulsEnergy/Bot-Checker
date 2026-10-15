@@ -30,7 +30,7 @@ It is installable as an app on phones and computers and works offline after the 
 
 Upload all the files to the root of a repository, then in the repository go to Settings, then Pages, choose Deploy from a branch, pick `main` and `/ (root)`, and save. The site appears at `https://<your-username>.github.io/<repository-name>/` within a minute or two.
 
-When you change `index.html`, also change `CACHE` in `sw.js` (for example to `real-or-fake-v10`) so installed copies pick up the new version.
+When you change `index.html`, also change `CACHE` in `sw.js` (for example to `real-or-fake-v11`) so installed copies pick up the new version.
 
 ## Limits
 
