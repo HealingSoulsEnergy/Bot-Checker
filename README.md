@@ -1,6 +1,6 @@
 # Real or Fake?
 
-Paste an email, a social media post or comment, a text message, a website address and its page text, a TV or online ad, a letter in the mail, or a news story or video, or a voicemail or phone call, or add a screenshot or photo, and Real or Fake? scores how likely it is to be spam, a scam, or a bot from 0 to 100. It lists each warning sign it found and highlights the exact words in the message.
+Paste an email, a social media post or comment, a text message, a website address and its page text, a TV or online ad, a letter in the mail, or a news story or video, a voicemail or phone call, or a campaign ad, mailer or political text, or add a screenshot or photo, and Real or Fake? scores how likely it is to be spam, a scam, or a bot from 0 to 100. It lists each warning sign it found and highlights the exact words in the message.
 
 Everything runs in the browser. Pasted text is never sent anywhere. Screenshots are read on the device with Tesseract OCR (the reader downloads once from a public CDN the first time it is used, then is cached).
 
@@ -16,6 +16,8 @@ For news stories and videos it flags fake celebrity and Shark Tank endorsements,
 
 For voicemails and calls it flags the grandparent scam (a relative, or a cloned voice, in jail or hurt and needing money), government and police threats, press 1 and stay on the line robocalls, fake Amazon or Apple order calls, and utility shutoff threats, and it reminds people that a familiar voice proves nothing now. Voice recordings, including a clip of someone giving a speech, can be dropped in and are written out on the device with the Whisper speech model (about 40 MB, downloaded once). It does not and cannot tell whether a voice was AI cloned. For speeches and talks, by AI or a real person, it also flags vague "experts say" claims with no names, absolute certainty, fear and outrage appeals, and asks for money, without judging any viewpoint.
 
+For campaign ads it never judges candidates, parties or issues. It checks whether the ad says who paid for it (Ohio law requires this on most campaign mail, ads and robocalls), flags wrong information about how or when to vote, mailers made to look like official election notices, voting record shaming, and high-pressure fundraising tricks like 800% matches and fake expired memberships, and links to VoteOhio.gov, the FEC, Ballotpedia and fact checks.
+
 It also has a writing style section that shows the clues pointing toward AI writing and the clues pointing toward a person, side by side. It is a lean, never a verdict, and it never changes the spam score, because AI writing cannot be proven from text alone.
 
 It is installable as an app on phones and computers and works offline after the first visit.
@@ -28,7 +30,7 @@ It is installable as an app on phones and computers and works offline after the 
 
 Upload all the files to the root of a repository, then in the repository go to Settings, then Pages, choose Deploy from a branch, pick `main` and `/ (root)`, and save. The site appears at `https://<your-username>.github.io/<repository-name>/` within a minute or two.
 
-When you change `index.html`, also change `CACHE` in `sw.js` (for example to `real-or-fake-v9`) so installed copies pick up the new version.
+When you change `index.html`, also change `CACHE` in `sw.js` (for example to `real-or-fake-v10`) so installed copies pick up the new version.
 
 ## Limits
 

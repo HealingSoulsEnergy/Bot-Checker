@@ -1,5 +1,5 @@
 // Real or Fake? service worker: keeps the app working offline after the first visit.
-const CACHE = "real-or-fake-v8";
+const CACHE = "real-or-fake-v9";
 const CORE = ["./", "index.html", "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", e => {
